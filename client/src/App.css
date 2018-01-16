@@ -1,32 +1,27 @@
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #F8EEE7;
 }
 
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+#root {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 400px;
-}
-
+  
 #upload-zone {
   color: #F8EEE7;
   text-shadow: 1px 1px #000;
-  display: block;
+
   outline: 2px dashed #49274A;
   background-color: #94618E;
   width: 400px;
@@ -36,18 +31,18 @@ body {
 }
 
 #upload-zone input {
-    font-size: 14pt;
+  font-size: 14pt;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .album img {
-    max-width: 70%;
-    padding: 10px;
+  max-width: 70%;
+  padding: 10px;
 }
 
 .draghover {
-    opacity: 0.5;
+  opacity: 0.5;
 }

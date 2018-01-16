@@ -90,19 +90,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="outer">
-          <div className="middle">
-            <div className="inner">
-              <div id="upload-zone" className={this.state.className}>
-                <i className="fa fa-cloud-upload fa-4x"></i>
-                <br />
-                <p>Drop upload here</p>
-                <input type="text" id="url" size="32" className="" value={this.state.viewUrl} />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="upload-zone" className={this.state.className}>
+        <i className="fa fa-cloud-upload fa-4x"></i>
+        <br />
+        <p>Drop upload here</p>
+        <input type="text" id="url" size="32" className="" value={this.state.viewUrl} />
       </div>
     );
   }
